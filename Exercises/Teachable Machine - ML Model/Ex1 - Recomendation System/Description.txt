@@ -1,0 +1,17 @@
+
+URL: https://ml-playground.com/
+
+Sugestion:
+
+	- A person "Sr." want to decide what movie to assist
+
+	- He likes or deslikes movies!
+
+	- Y: Duration of the movie (shorter to more time)
+	- X: Like scale (less likes to more likes)
+
+	Q: What haappens if a new video arrives? Train again!
+	
+	Q: What happens if a new movie appear with large likes and large duration?
+
+	Q: Should de movie be recommended or not to "Sr"?
