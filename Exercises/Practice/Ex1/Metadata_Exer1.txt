@@ -1,0 +1,12 @@
+
+Car Sales
+---------------------
+
+
+Columns
+
+1- Make: brand of the car
+2- Colour: colour of the car (red, blue, etc.)
+3- Odometer: kilometres the car has
+4- Doors: number of doors
+5- Price: cost of the car in dollars
