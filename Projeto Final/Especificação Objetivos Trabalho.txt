@@ -1,0 +1,36 @@
+Trabalho Prático da UC de Machine Learning Algorithms
+-----------------------------------------------------
+
+Podem ser explorados problemas de classificação, regressão ou outros.
+
+Objetivo 1
+----------
+
+Analisar a relação entre Meteorologia e Produção agrícola. Por exemplo, quando determinado produto deve ser produzido?
+
+Dados (in):
+	- Meteorologia da Madeira
+	- Procurar Dados de produções nacionais (produto/condições)
+	- No caso de não encontrarem, usar os dados (enviados) relativamente a outras regiões
+
+
+
+Objetivo 2
+----------
+
+Analisar e monitorizar consumos de energia doméstica. Por exemplo, prever consumos/produções, aconselhar sobre quando usar determinados eletrodomésticos, etc.
+
+Dados (in)
+	- Dataset de consumos domésticos de uma região
+
+
+
+Objetivo 3
+----------
+
+Explorar um outro problema
+
+
+Datasets disponíveis em:
+------------------------
+https://drive.google.com/drive/folders/1g7BV_5niP0RdvKOg0CbjYya32jVkdUAL?usp=sharing
