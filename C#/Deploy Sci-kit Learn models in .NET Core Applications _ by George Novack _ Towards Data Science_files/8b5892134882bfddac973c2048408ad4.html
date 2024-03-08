@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://towardsdatascience.com/media/8b5892134882bfddac973c2048408ad4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>sklearn-dotnet-training.py – Medium</title><meta name="description" content="You can&#39;t perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session."><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body data-new-gr-c-s-check-loaded="14.1159.0" data-gr-ext-installed=""><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./28fab735479e434d08d5626d054660af.js.transferir" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-5bb00a1034b4.css"><div id="gist104134150" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container">
+  <div id="file-sklearn-dotnet-training-py" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-python  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="Python" data-tagsearch-path="sklearn-dotnet-training.py">
+        <tbody><tr>
+          <td id="file-sklearn-dotnet-training-py-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-sklearn-dotnet-training-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">dataset</span> <span class="pl-c1">=</span> <span class="pl-s1">datasets</span>.<span class="pl-en">fetch_california_housing</span>()</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-sklearn-dotnet-training-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-v">X_train</span>, <span class="pl-v">X_test</span>, <span class="pl-s1">y_train</span>, <span class="pl-s1">y_test</span> <span class="pl-c1">=</span> <span class="pl-en">train_test_split</span>(<span class="pl-s1">dataset</span>.<span class="pl-s1">data</span>, <span class="pl-s1">dataset</span>.<span class="pl-s1">target</span>, <span class="pl-s1">test_size</span><span class="pl-c1">=</span><span class="pl-c1">0.1</span>)</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-sklearn-dotnet-training-py-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-sklearn-dotnet-training-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">model_parameters</span> <span class="pl-c1">=</span> {</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-sklearn-dotnet-training-py-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-s">'n_estimators'</span>: <span class="pl-c1">500</span>,</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L6" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-sklearn-dotnet-training-py-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-s">'max_depth'</span>: <span class="pl-c1">6</span>,</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L7" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-sklearn-dotnet-training-py-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-s">'min_samples_split'</span>: <span class="pl-c1">5</span>,</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L8" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-sklearn-dotnet-training-py-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-s">'learning_rate'</span>: <span class="pl-c1">0.01</span>,</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L9" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-sklearn-dotnet-training-py-LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-s">'loss'</span>: <span class="pl-s">'ls'</span></td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L10" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-sklearn-dotnet-training-py-LC10" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L11" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-sklearn-dotnet-training-py-LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L12" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-sklearn-dotnet-training-py-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">model</span> <span class="pl-c1">=</span> <span class="pl-v">GradientBoostingRegressor</span>(<span class="pl-c1">**</span><span class="pl-s1">model_parameters</span>)</td>
+        </tr>
+        <tr>
+          <td id="file-sklearn-dotnet-training-py-L13" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="13"></td>
+          <td id="file-sklearn-dotnet-training-py-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">model</span>.<span class="pl-en">fit</span>(<span class="pl-v">X_train</span>, <span class="pl-s1">y_train</span>)</td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/gnovack/28fab735479e434d08d5626d054660af/raw/048ff1433b2b552dc5de7e0d66797f36f81ab441/sklearn-dotnet-training.py" style="float:right" class="Link--inTextBlock">view raw</a>
+        <a href="https://gist.github.com/gnovack/28fab735479e434d08d5626d054660af#file-sklearn-dotnet-training-py" class="Link--inTextBlock">
+          sklearn-dotnet-training.py
+        </a>
+        hosted with ❤ by <a class="Link--inTextBlock" href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log('maybeResize error: ', error)}}maybeResize();</script><script defer="" src="./v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;860e433eae94338c&quot;,&quot;version&quot;:&quot;2024.2.4&quot;,&quot;token&quot;:&quot;0b5f665943484354a59c39c6833f7078&quot;}" crossorigin="anonymous"></script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

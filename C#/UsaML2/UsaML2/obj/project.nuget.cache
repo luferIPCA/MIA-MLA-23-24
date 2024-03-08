@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "C2iHAHFAp+CvqzgFx9Ajb5I+u8Jqn14g2tLwWfUd+jXLM+3V4wbpAiNTAasIC2Y12Un3FG/E/4NjTcTN89XScg==",
+  "success": true,
+  "projectFilePath": "D:\\Temp\\MIA-MLA\\C#\\UsaML2\\UsaML2\\UsaML2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lufer\\.nuget\\packages\\microsoft.ml.onnxruntime\\1.17.1\\microsoft.ml.onnxruntime.1.17.1.nupkg.sha512",
+    "C:\\Users\\lufer\\.nuget\\packages\\microsoft.ml.onnxruntime.managed\\1.17.1\\microsoft.ml.onnxruntime.managed.1.17.1.nupkg.sha512",
+    "C:\\Users\\lufer\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
